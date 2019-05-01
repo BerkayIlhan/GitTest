@@ -26,4 +26,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="161dp" />
 
+    <Button
+        android:id="@+id/btnDecrement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        tools:layout_editor_absoluteX="156dp" />
+
 </android.support.constraint.ConstraintLayout>

@@ -16,6 +16,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnStart;
+    private Button btnDecrement;
     private TextView mainText;
     private ConstraintLayout mainLayout;
     private int count = 0;
@@ -29,7 +30,12 @@ public class MainActivity extends AppCompatActivity {
         btnStart = findViewById(R.id.startBtn);
         mainText = findViewById(R.id.mainText);
         mainLayout = findViewById(R.id.mainLayout);
+
         final Random random = new Random();
+
+        btnDecrement = findViewById(R.id.btnDecrement);
+
+
         final String[] colors = new String[]{ "#00FF00", "#008080", "#FF00FF", "#0000FF", "#FF0000"};
 
         btnStart.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 int colorInt = random.nextInt(5);
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
+            }
+        });
+
+        btnDecrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
         Log.i("Test", "Test");
