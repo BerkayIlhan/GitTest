@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/startBtn"
+        android:id="@+id/btnIncrement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintBottom_toTopOf="@+id/btnIncrement"
         tools:layout_editor_absoluteX="156dp" />
 
 </android.support.constraint.ConstraintLayout>

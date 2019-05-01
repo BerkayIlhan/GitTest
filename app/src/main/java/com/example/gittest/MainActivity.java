@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnStart;
+    private Button btnIncrement;
     private Button btnDecrement;
     private TextView mainText;
     private ConstraintLayout mainLayout;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        btnStart = findViewById(R.id.startBtn);
+        btnIncrement = findViewById(R.id.btnIncrement);
         mainText = findViewById(R.id.mainText);
         mainLayout = findViewById(R.id.mainLayout);
 
@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
         final String[] colors = new String[]{ "#00FF00", "#008080", "#FF00FF", "#0000FF", "#FF0000"};
 
-        btnStart.setOnClickListener(new View.OnClickListener() {
+        btnIncrement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Button clicked !", Toast.LENGTH_SHORT);
+                Toast.makeText(MainActivity.this, "Incremented by 1 !", Toast.LENGTH_SHORT);
                 count += 1;
 
                 int colorInt = random.nextInt(5);
@@ -53,9 +53,13 @@ public class MainActivity extends AppCompatActivity {
         btnDecrement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Decremented by 1 !", Toast.LENGTH_SHORT);
+                count -= 1;
 
+                int colorInt = random.nextInt(5);
+                mainText.setText("Clicked = " + count);
+                mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
             }
         });
-        Log.i("Test", "Test");
     }
 }
