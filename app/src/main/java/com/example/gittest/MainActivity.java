@@ -14,7 +14,6 @@ import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
-
     private Button btnIncrement;
     private Button btnDecrement;
     private Button btnDivide;
