@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="DECREMENT"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="161dp" />
 
@@ -31,17 +31,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="INCREMENT"
+        android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/btnIncrement"
         tools:layout_editor_absoluteX="156dp" />
-
-    <Button
-        android:id="@+id/multiplyBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Multiply"
-        app:layout_constraintBottom_toTopOf="@+id/btnDecrement"
-        tools:layout_editor_absoluteX="184dp" />
 
 </android.support.constraint.ConstraintLayout>
