@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        final String[] colors = new String[]{ "#00FF00", "#008080", "#FF00FF", "#0000FF", "#FF0000"};
+        final String[] colors = new String[]{ "#B9796C", "#2265D9", "#DA6EE5", "#F7F462", "#FF0000"};
 
         btnIncrement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Incremented by 5 !", Toast.LENGTH_SHORT);
-                count += 5;
+                Toast.makeText(MainActivity.this, "Incremented by 1 !", Toast.LENGTH_SHORT);
+                count += 1;
 
                 int colorInt = random.nextInt(5);
                 mainText.setText("Clicked = " + count);
@@ -58,27 +58,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(MainActivity.this, "Decremented by 5 !", Toast.LENGTH_SHORT);
-                count -= 5;
+                Toast.makeText(MainActivity.this, "Decremented by 1 !", Toast.LENGTH_SHORT);
+                count -= 1;
 
                 int colorInt = random.nextInt(5);
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
-                Log.i("Decrement LOG", "Decremented number by 5");
+                Log.i("Decrement LOG", "Decremented number by 1");
             }
         });
 
-        btnMultiply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Multiplied by 2 !", Toast.LENGTH_SHORT);
-                count *= 2;
-
-                int colorInt = random.nextInt(5);
-                mainText.setText("Clicked = " + count);
-                mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
-                Log.i("Multiply LOG", "Multiplied number by 1");
-            }
-        });
     }
 }
