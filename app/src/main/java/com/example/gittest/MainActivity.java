@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
         btnIncrement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Incremented by 1 !", Toast.LENGTH_SHORT);
-                count += 1;
+                Toast.makeText(MainActivity.this, "Incremented by 5 !", Toast.LENGTH_SHORT);
+                count += 5;
 
                 int colorInt = random.nextInt(5);
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
-                Log.i("Increment LOG", "Incremented number by 1");
+                Log.i("Increment LOG", "Incremented number by 5");
             }
         });
 
@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(MainActivity.this, "Decremented by 1 !", Toast.LENGTH_SHORT);
-                count -= 1;
+                Toast.makeText(MainActivity.this, "Decremented by 5 !", Toast.LENGTH_SHORT);
+                count -= 5;
 
                 int colorInt = random.nextInt(5);
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
-                Log.i("Decrement LOG", "Decremented number by 1");
+                Log.i("Decrement LOG", "Decremented number by 5");
             }
         });
 
