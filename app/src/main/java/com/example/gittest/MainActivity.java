@@ -47,15 +47,16 @@ public class MainActivity extends AppCompatActivity {
                 int colorInt = random.nextInt(5);
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
+                Log.i("Increment LOG", "Incremented number by 1");
             }
         });
 
         btnDecrement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Log.i("Decrement LOG", "Decremented number by 1");
             }
         });
-        Log.i("Test", "Test");
+
     }
 }
