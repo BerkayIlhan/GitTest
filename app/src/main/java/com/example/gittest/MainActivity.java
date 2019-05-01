@@ -14,6 +14,7 @@ import android.util.Log;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnStart;
+    private Button btnDecrement;
     private TextView mainText;
     private ConstraintLayout mainLayout;
     private int count = 0;
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         btnStart = findViewById(R.id.startBtn);
         mainText = findViewById(R.id.mainText);
         mainLayout = findViewById(R.id.mainLayout);
+        btnDecrement = findViewById(R.id.btnDecrement);
+
         final String[] colors = new String[]{ "#00FF00", "#008080", "#FF00FF", "#0000FF", "#FF0000"};
 
         btnStart.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[count - 1]));
+            }
+        });
+
+        btnDecrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
         Log.i("Test", "Test");
