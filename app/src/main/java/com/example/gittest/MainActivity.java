@@ -61,9 +61,6 @@ public class MainActivity extends AppCompatActivity {
                 int colorInt = random.nextInt(5);
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
-            }
-        });
-
                 Log.i("Decrement LOG", "Decremented number by 1");
             }
         });
