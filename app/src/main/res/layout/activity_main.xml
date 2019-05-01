@@ -36,21 +36,12 @@
         tools:layout_editor_absoluteX="156dp" />
 
     <Button
-        android:id="@+id/btnMultiply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="MULTIPLY"
-        app:layout_constraintBottom_toTopOf="@+id/btnDecrement"
-        tools:layout_editor_absoluteX="184dp" />
-
-    <Button
         android:id="@+id/btnDivide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Divide"
-        app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
+        app:layout_constraintBottom_toTopOf="@+id/btnDecrement"
         tools:layout_editor_absoluteX="184dp" />
 
 </android.support.constraint.ConstraintLayout>

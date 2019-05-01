@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnIncrement;
     private Button btnDecrement;
-    private Button btnMultiply;
     private Button btnDivide;
 
     private TextView mainText;
@@ -32,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnIncrement = findViewById(R.id.btnIncrement);
         btnDecrement = findViewById(R.id.btnDecrement);
-        btnMultiply = findViewById(R.id.btnMultiply);
         btnDivide = findViewById(R.id.btnDivide);
         mainText = findViewById(R.id.mainText);
         mainLayout = findViewById(R.id.mainLayout);
@@ -65,20 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 mainText.setText("Clicked = " + count);
                 mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
                 Log.i("Decrement LOG", "Decremented number by 1");
-            }
-        });
-
-
-        btnMultiply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Multiplied by 2 !", Toast.LENGTH_SHORT);
-                count *= 2;
-
-                int colorInt = random.nextInt(5);
-                mainText.setText("Clicked = " + count);
-                mainLayout.setBackgroundColor(Color.parseColor(colors[colorInt]));
-                Log.i("Multiply LOG", "Multiplied number by 1");
             }
         });
 
